@@ -1,3 +1,9 @@
+html {
+  background-color: rgb(241, 253, 247);
+  margin: 0;
+  padding: 0;
+  
+}
 h1 {
     color: rgb(6, 68, 12);
     font-size: 3rem;
@@ -45,6 +51,7 @@ nav a, nav span {
     text-decoration: none;
     color: darkgreen;
   }
+
 section a {
     display: inline-block;
     font-size: rem;
@@ -54,4 +61,15 @@ section a {
     text-decoration-color: rgb(162, 175, 175);
     margin-left: 10rem;
 }
+aside {
+    margin-left: 10px;
+    padding: 1%;
+    
+}
+aside a {
+      display: block;
+      float: left;
+      width: 50%;
+    }
+
   
