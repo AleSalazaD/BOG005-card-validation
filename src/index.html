@@ -2,13 +2,99 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Pago tarjeta</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Tienda</a></li>
+          <li><a href="#">Ayuda</a></li>
+          <li><a href="#purchaise" target="_blank">Pagar</a></li>
+        </ul>
+      </nav>
+      <img src="bonsaiShop.jpg" alt="bonsai logo">
+      <h1>Bonsai Kingdom</h1>
+      <h2>Greening your home</h2>
+      
+      <!-- Código para la caja de búsqueda: No será funcional en esta aplicación-->
+      <div class="search">
+        <input class="search--input" type="search" placeholder="buscar...">
+        <input class="search--submit" type="submit" value="&#x1f50d;"/>
+      </div>   
+    </header>
+
+    <main>
+      <section id="purchaise">
+        <fieldset>
+          <legend>Procesando compra</legend>
+            <a href="#register">Registra tus Datos</a>
+            <a href="#shopingCar">Tus productos</a>
+            <a href="#shipingData">Datos de envío</a>
+            <a href="#paymentSection">Zona de Pagos</span></a>
+        </fieldset>
+      </section>
+
+      <section id="paymentSection">
+        <fieldset>
+          <legend>Método de pago</legend>
+          <input type="radio" name="payment" id="Credit"  value="Credit" checked>
+          <label for="Credit">Tarjeta de Crédito</label>
+          <br>
+          <input type="radio" name="payment" id="Debit"  value="Debit">
+          <label for="Debit">Tarjeta Débito</label>
+          <br>
+          <input type="radio" name="payment" id="transfer"  value="transfer">
+          <label for="transfer">Transferencia Bancaria</label>
+        </fieldset>
+      </section>
+
+      <section>
+        <fieldset>
+          <legend>Tarjeta de Crédito</legend>
+          <form action="" method="">
+            <p>
+              <label for="clientName">Nombre como aparece en la Tarjeta</label>
+              <input type="text" id="clientName" name="" required>
+            </p>
+            <p>
+              <label for="card">Tipo de tarjeta </label>
+              <select id="card" name="usercard" required>
+                <option value="visa">Visa</option>
+                <option value="mc">Mastercard</option>
+                <option value="amex">American Express</option>
+              </select>
+            </p>
+            <p>
+              <label for="tCredit">Número de la tarjeta</label>
+              <input type="tel" id="tCredit"name=" "value="" placeholder="XXXX XXXX XXXX XXXX" required>
+
+              <input type="date" required>
+
+              <input type="tel" placeholder="CVV" required>
+            </p>
+            <p>
+              <button type="submit">PAGAR</button>
+              <button type="reset">CANCELAR</button>
+            </p>
+
+          </form>
+          
+        </fieldset>
+      </section>   
+    </main>
+
+    <aside>
+      <fieldset>
+        <legend>Resumen de Compra</legend>
+      </fieldset>
+    </aside>
+
+    <footer>
+
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
