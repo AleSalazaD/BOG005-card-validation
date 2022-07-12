@@ -16,7 +16,7 @@ h2 {
     color: darkgreen;
     
     text-align: left;
-    margin-top: 4em;
+    margin-top: 4.2em;
     margin-left: -12em;
 }
 header {
@@ -53,13 +53,14 @@ nav a, nav span {
   }
 
 section a {
-    display: inline-block;
+    display: flexbox;
     font-size: rem;
     height: 4rem;
     text-transform: capitalize;
     text-align: center;
     text-decoration-color: rgb(162, 175, 175);
-    margin-left: 10rem;
+    margin-left: 1rem;
+    
 }
 aside {
     margin-left: 10px;

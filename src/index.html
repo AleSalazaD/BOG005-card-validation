@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Pago tarjeta</title>
+    <title>bonsaiKingdom</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="bonsaiShop.png"/>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Tienda</a></li>
-          <li><a href="#">Ayuda</a></li>
-          <li><a href="#purchaise" target="_blank">Pagar</a></li>
-        </ul>
-      </nav>
-      <img src="bonsaiShop.jpg" alt="bonsai logo">
-      <h1>Bonsai Kingdom</h1>
-      <h2>Greening your home</h2>
-      
-      <!-- Código para la caja de búsqueda: No será funcional en esta aplicación-->
-      <div class="search">
-        <input class="search--input" type="search" placeholder="buscar...">
-        <input class="search--submit" type="submit" value="&#x1f50d;"/>
-      </div>   
-    </header>
-
+      <p>
+        <img src="bonsaiShop.png" alt="bonsai logo">
+        <h1>Bonsai Kingdom</h1>
+        <h2>Un Bosquecito en Casa</h2>
+      </p>
+        <!-- Código para la caja de búsqueda: No será funcional en esta aplicación-->
+        <div class="search">
+          <input class="search--input" type="search" placeholder="buscar...">
+          <input class="search--submit" type="submit" value="&#x1f50d;"/>
+        </div> 
+        <nav>
+          <ul>
+            <li><a href="#">Ingreso</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Carrito</a></li>
+          </ul>
+        </nav>  
+      </header>
     <main>
       <section id="purchaise">
         <fieldset>
@@ -57,27 +58,27 @@
           <form action="" method="">
             <p>
               <label for="clientName">Nombre como aparece en la Tarjeta</label>
-              <input type="text" id="clientName" name="" required>
+              <input type="text" id="clientName" name="" >
             </p>
             <p>
               <label for="card">Tipo de tarjeta </label>
-              <select id="card" name="usercard" required>
+              <select id="card" name="usercard" >
                 <option value="visa">Visa</option>
                 <option value="mc">Mastercard</option>
                 <option value="amex">American Express</option>
               </select>
             </p>
             <p>
-              <label for="tCredit">Número de la tarjeta</label>
-              <input type="tel" id="tCredit"name=" "value="" placeholder="XXXX XXXX XXXX XXXX" required>
+              <label for="Credit">Número de la tarjeta</label>
+              <input type="tel" id="Credit"name=" "value="" placeholder="XXXX XXXX XXXX XXXX" >
 
-              <input type="date" required>
+              <input type="date" >
 
-              <input type="tel" placeholder="CVV" required>
+              <input type="tel" id="cvv" placeholder="CVV" >
             </p>
             <p>
-              <button type="submit">PAGAR</button>
-              <button type="reset">CANCELAR</button>
+              <button type="submit" id="purchaise">PAGAR</button>
+              <button type="">CANCELAR</button>
             </p>
 
           </form>
@@ -89,10 +90,10 @@
     <aside>
       <fieldset>
         <legend>Resumen de Compra</legend>
-        <ul>
-            <li><input type="image" alt="Naranjo Mágico"></li>
-            <li><input type="image" alt="Ciruelo Noruego"></li>
-            <li><input type="image" alt="Casita de Hadas"></li>
+        <ol>
+            <li><img src="images\bonsaiNaranjo.jpg" alt="Naranjo Mágico" width="140px"/>Naranjo mágico</li>
+            <li><img src="images\bonsaiCiruelo.jpg" alt="Ciruelo Celta" width="140px"/>Ciruelo Celta</li>
+            <li><img src="images\bonsaiCasita.jpg" alt="Casita de Hadas" width="140px"/>Casita de hadas</li>
         </ul>
         
       <p>Subtotal:</p>
