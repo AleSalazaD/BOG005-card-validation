@@ -21,24 +21,17 @@
         <nav>
           <ul>
             <li><a href="#">Ingreso</a></li>
+            |
             <li><a href="#">Blog</a></li>
+            |
             <li><a href="#">Tienda</a></li>
+            |
             <li><a href="#">Carrito</a></li>
           </ul>
         </nav>  
       </header>
     <main>
-      <section id="purchaise">
-        <fieldset>
-          <legend>Procesando compra</legend>
-            <a href="#register">Registra tus Datos</a>
-            <a href="#shopingCar">Tus productos</a>
-            <a href="#shipingData">Datos de envío</a>
-            <a href="#paymentSection">Zona de Pagos</span></a>
-        </fieldset>
-      </section>
-
-      <section id="paymentSection">
+      <section id="dataPayment">
         <fieldset>
           <legend>Método de pago</legend>
           <input type="radio" name="payment" id="Credit"  value="Credit" checked>
@@ -52,7 +45,7 @@
         </fieldset>
       </section>
 
-      <section>
+      <section id="dataCard">
         <fieldset>
           <legend>Tarjeta de Crédito</legend>
           <form action="" method="">
@@ -69,12 +62,14 @@
               </select>
             </p>
             <p>
-              <label for="Credit">Número de la tarjeta</label>
-              <input type="tel" id="Credit"name=" "value="" placeholder="XXXX XXXX XXXX XXXX" >
+              <label for="credit">Número de la tarjeta</label>
+              <input type="tel" id="credit" placeholder="XXXX XXXX XXXX XXXX"/>
 
-              <input type="date" >
-
-              <input type="tel" id="cvv" placeholder="CVV" >
+              <label for="vencim">Vencimiento: </label>
+              <input type="tel" id="vencim" placeholder="MM/AA"/>
+              
+              <label for="cvv">CVV:</label>
+              <input type="tel" id="cvv" placeholder="CVV" />
             </p>
             <p>
               <button type="submit" id="purchaise">PAGAR</button>
@@ -87,24 +82,24 @@
       </section>   
     </main>
 
-    <aside>
+    <aside id="column">
       <fieldset>
         <legend>Resumen de Compra</legend>
-        <ol>
-            <li><img src="images\bonsaiNaranjo.jpg" alt="Naranjo Mágico" width="140px"/>Naranjo mágico</li>
-            <li><img src="images\bonsaiCiruelo.jpg" alt="Ciruelo Celta" width="140px"/>Ciruelo Celta</li>
-            <li><img src="images\bonsaiCasita.jpg" alt="Casita de Hadas" width="140px"/>Casita de hadas</li>
+        <ul>
+            <li><img src="images\bonsaiNaranjo.jpg" alt="Naranjo Mágico" width="140px"/>1. Naranjo mágico</li>
+            <li><img src="images\bonsaiCiruelo.jpg" alt="Ciruelo Celta" width="140px"/>2. Ciruelo Celta</li>
+            <li><img src="images\bonsaiCasita.jpg" alt="Casita de Hadas" width="140px"/>3. Casita de hadas</li>
         </ul>
         
       <p>Subtotal:</p>
       <p>Envío:</p>
-      <P>IVA:</P> 
-      <P>TOTAL:</P> 
+      <p>IVA:</p> 
+      <p>TOTAL:</p> 
       </fieldset>
     </aside>
 
-    <footer>
-      <P>Encuéntranos en nuestras redes sociales como @bonsaiKingndom y escríbenos para estar en contacto.</P>
+    <footer id="foot">
+      <p>Encuéntranos en nuestras redes sociales como @bonsaiKingndom y escríbenos para estar en contacto.</p>
     </footer>
     <script src="index.js" type="module"></script>
   </body>

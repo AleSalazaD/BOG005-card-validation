@@ -1,5 +1,10 @@
 # VALIDADOR DE TARJETAS DE CRÉDITO PARA TIENDA VIRTUAL
 Proyecto nivel 1 para el BootCamp de Laboratoria. Consiste en desarrollar un validador de tarjetas de crédito utilizando JavaScript vanilla dentro del contexto de una aplicación web.
+
+## Objetivos de aprendizaje
+1. Uso semántico de HTML
+2. Uso de selectores CSS
+
 ***
 
 # Usuarios y objetivos en relación con el producto
