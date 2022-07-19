@@ -58,6 +58,10 @@ nav a{
     padding: 10px;
   }
 
+  p {
+    padding: 4px;
+  }
+
 #dataPayment {
     display: flexbox;
     float: left;

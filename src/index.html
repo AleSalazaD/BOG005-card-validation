@@ -48,38 +48,44 @@
       <section id="dataCard">
         <fieldset>
           <legend>Tarjeta de Crédito</legend>
-          <form action="" method="">
+          <form action="" method="post">
             <p>
               <label for="clientName">Nombre como aparece en la Tarjeta</label>
-              <input type="text" id="clientName" name="" >
+              <input type="text" class="validateCard" id="clientName" placeholder="Nombre" >
             </p>
             <p>
-              <label for="card">Tipo de tarjeta </label>
-              <select id="card" name="usercard" >
+              <label for="cardType">Tipo de tarjeta </label>
+              <select class="validateCard" id="cardType" >
                 <option value="visa">Visa</option>
                 <option value="mc">Mastercard</option>
                 <option value="amex">American Express</option>
               </select>
             </p>
             <p>
-              <label for="credit">Número de la tarjeta</label>
-              <input type="tel" id="credit" placeholder="XXXX XXXX XXXX XXXX"/>
-
-              <label for="vencim">Vencimiento: </label>
-              <input type="tel" id="vencim" placeholder="MM/AA"/>
-              
-              <label for="cvv">CVV:</label>
-              <input type="tel" id="cvv" placeholder="CVV" />
+              <label for="cardNumber">Número de la tarjeta</label>
+              <input type="tel" class="validateCard" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX"/>
             </p>
             <p>
-              <button type="submit" id="purchaise">PAGAR</button>
-              <button type="">CANCELAR</button>
+              <label for="vencim">Vencimiento: </label>
+              <input type="tel" class="validateCard" id="vencim" placeholder="MM/AA"/>
+            
+              <label for="cvv">CVV:</label>
+              <input type="tel" class="validateCard" id="cvv" placeholder="CVV" />
             </p>
-
+            <p>
+              <button class="validateCard" type="button" id="btnSubmit">PAGAR</button>
+              <button type="button">Cancelar</button>
+            </p>
           </form>
-          
         </fieldset>
-      </section>   
+      </section>
+      
+      <section id="validationDataCard">
+        <p id="nom"></p>
+        <p id="num"></p>
+        <p id="date"></p>
+        <p id="pin"></p>
+      </section>
     </main>
 
     <aside id="column">
@@ -101,6 +107,6 @@
     <footer id="foot">
       <p>Encuéntranos en nuestras redes sociales como @bonsaiKingndom y escríbenos para estar en contacto.</p>
     </footer>
-    <script src="index.js" type="module"></script>
+    <script src="index.js"></script>
   </body>
 </html>
