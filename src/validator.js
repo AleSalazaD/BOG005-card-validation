@@ -1,5 +1,8 @@
-const validator = {
-  isValid(){}
-};
+//const validator = {
+  
+  function isValid(){
+    
+  }
+//};
 
 export default validator;

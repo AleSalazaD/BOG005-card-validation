@@ -7,8 +7,10 @@ function getData(){
     const card = document.getElementById('cardType').value;
     console.log(card);
 
-    const number = document.getElementById('cardNumber').value;
-    console.log(number);//Requiere el masking
+    let number = document.getElementById('cardNumber').value;
+    const arrayNumber = number.split("").reverse();
+    console.log(arrayNumber);//Requiere el masking, yconvertir a array
+
 
     const date = document.getElementById('expiration').value;
     console.log(date);
