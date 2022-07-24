@@ -3,7 +3,7 @@
   padding: 0px;
 }
 
-html {
+body {
   background-color: rgb(241, 253, 247);
   margin: 20px;
   padding: 0px; 
@@ -40,19 +40,18 @@ nav ul {
 nav li {
     display: block;
     text-align: center;
-    margin-block-end: 1em;
     flex: 1;
   }
 nav a{
     font-size: 1rem;
     height: 3rem;
-    line-height: 2;
-    text-transform: uppercase;
     color: darkgreen;
   }
 
   legend {
-    font-size: x-large;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkgreen;
   }
   fieldset {
     padding: 10px;
@@ -61,43 +60,34 @@ nav a{
   p {
     padding: 4px;
   }
-
-#dataPayment {
-    display: flexbox;
-    float: left;
-    font-size: rem;
-    height: 3rem;
-    text-align: left;
-    text-decoration-color: rgb(162, 175, 175);
-    margin-left: 1rem;
-    padding: 10px;
-    padding-top: 30px;
-    padding-bottom: 80px;
-    width: 60%;
-}
-
-#dataCard {
-  display: flexbox;
-  font-size: rem;
+main {
   height: 3rem;
+  display: flexbox;
+  font-size: 1rem;
   text-align: left;
   text-decoration-color: rgb(162, 175, 175);
   margin-left: 1rem;
   padding-left: 10px;
+  float: left;
   width: 60%;
-  
+  padding-bottom: 80px;
 }
+
 aside {
     display: block;
     float: right;
-    width: 30%;
-    font-size: larger;
+    width: 35%;
+    font-size: medium
     
 }
 
-#foot {
+img {
+  width:90px;
+}
+
+footer {
   clear: both;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   border-top: 2px solid #999999;
 }
