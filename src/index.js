@@ -3,8 +3,10 @@ import validator from './validator.js';
 console.log(validator);
 
 function getData(){
+    document.getElementById('nombre');
     const name = document.getElementById('clientName').value; //Captura el nombre
     console.log(name);
+    document.getElementById('nombre').innerHTML = name;
 
     const card = document.getElementById('cardType').value; //Captura el tipo de tarjeta
     console.log(card);
@@ -21,8 +23,11 @@ function getData(){
     }
     arrayNum = arrayNum.reverse();
     console.log(arrayNum);//Aún Requiere el masking, requiere las operaciones para Luhn (en validator.js)
+
+    // Algoritmo de Luhn en el validator.js
     
-    console.log(validator.isValid);//Devuelve el resultado de funcion isValid (está mandando resultado undefined)
+    
+    validator.isValid(arrayNum);//Devuelve el resultado de funcion isValid (está mandando resultado undefined)
 
     const month = document.getElementById('month').value;
     console.log(month);
@@ -35,5 +40,4 @@ function getData(){
 }
 
 document.getElementById('btnSubmit').addEventListener("click",getData);
-    
-//export  {arrayNumber};
+

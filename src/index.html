@@ -72,19 +72,19 @@
             </p>
             <p>
               <label>Vencimiento: </label>
-                <label for="month">Mes </label>
-                <select class="validateCard" id="month" >
-                  <option value="enero">01</option>
-                  <option value="febrero">02</option>
-                  <option value="marzo">03</option>
-                </select>
+              <label for="month">Mes </label>
+              <select class="validateCard" id="month" >
+                <option value="enero">01</option>
+                <option value="febrero">02</option>
+                <option value="marzo">03</option>
+              </select>
 
-                <label for="year">Año</label>
-                <select class="validateCard" id="year" >
-                  <option value="2022">22</option>
-                  <option value="2023">23</option>
-                  <option value="2024">24</option>
-                </select>
+              <label for="year">Año</label>
+              <select class="validateCard" id="year" >
+                <option value="2022">22</option>
+                <option value="2023">23</option>
+                <option value="2024">24</option>
+              </select>
             </p>
             <p>
               <label for="cvv">CVV:</label>
@@ -97,13 +97,23 @@
           </form>
         </fieldset>
       </section>
-      
-      <!-- <section id="validationDataCard">
-        <p id="nom"></p>
-        <p id="num"></p>
-        <p id="date"></p>
-        <p id="pin"></p>
-      </section> -->
+
+      <section class="impriCard">
+        <p>
+          <label for="nombre" class="label">Nombre en Tarjeta: </label>
+          <span class="impriCard" id="nombre"></span>
+        </p>
+        <p> 
+          <label for="tipo" class="label">Tipo de Tarjeta: </label>
+          <span class="impriCard" id="tipo"></span>
+        </p>
+        <p> 
+          <label for="numero" class="label">Número de Tarjeta: </label>
+          <span class="impriCard" id="numero"></span>
+        </p>
+        <label for="expiracion" class="label">Expiración: </label>
+        <span class="impriCard" id="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></span>
+      </section>
     </main>
 
     <aside id="column">
@@ -113,11 +123,10 @@
         <p><img src="images\bonsaiCiruelo.jpg" alt="Ciruelo Celta" />2. Ciruelo Celta $60000</p>
         <p><img src="images\bonsaiCasita.jpg" alt="Casita de Hadas" />3. Casita de hadas $85000</p>
         
-        
-      <p>Subtotal: $190000</p>
-      <p>Envío: $12000</p>
-      <p>IVA: $38380</p> 
-      <p>TOTAL:$228380</p> 
+        <p>Subtotal: $190000</p>
+        <p>Envío: $12000</p>
+        <p>IVA: $38380</p> 
+        <p>TOTAL:$228380</p> 
       </fieldset>
     </aside>
 
@@ -125,6 +134,5 @@
       <p>Encuéntranos en nuestras redes sociales como @bonsaiKingdom y escríbenos para estar en contacto.</p>
     </footer>
     <script src="index.js" type="module"></script>
-  
   </body>
 </html>
