@@ -3,20 +3,21 @@ const validator = {
   isValid: function (creditNum) {
     const total = [];
     creditNum.forEach((e, i) => {
-      if(i % 2 !== 0){
+      if(i % 2 === 0){
         const numPar = e * 2;
       
-        if (numPar >= 10){
+        if (numPar > 9){
           total.push(
             numPar.toString().split('').reduce((a, b) =>parseInt(a) + parseInt(b))
           );
         }
-        else{total.push(numPar); }
+        else{total.push(numPar); }//numpar si multiplica todos los pares, e si pasan sin multiplicar
+        console.log(numPar);
       }
       else{total.push(parseInt(e));}
     });
-
-    const sumaTotal = total.reduce((a, b) => a+b);
+    console.log(total);
+    const sumaTotal = total.reduce((digit1, digit2) => digit1+digit2, 0);
     console.log(sumaTotal);
     if(sumaTotal % 10 === 0){
       return true;

@@ -21,7 +21,7 @@ function getData(){
         let elemento = parseInt(strNumber[i])
         arrayNum.push(elemento)
     }
-    //arrayNum = arrayNum.reverse();
+    arrayNum = arrayNum.reverse();
     console.log(arrayNum);//Aún Requiere el masking, requiere las operaciones para Luhn (en validator.js)
 
     // Algoritmo de Luhn en el validator.js
@@ -32,7 +32,7 @@ function getData(){
         alert('Número de tarjeta válido')
     }
     else{alert('Número de tarjeta no válido');}
-    
+
 
     const month = document.getElementById('month').value;
     console.log(month);
