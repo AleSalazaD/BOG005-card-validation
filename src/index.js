@@ -3,17 +3,18 @@ import validator from './validator.js';
 console.log(validator);
 
 function getData(){
+//Captura de datos de la tarjeta: nombre, tipo de tarjeta.
     document.getElementById('nombre');
     const name = document.getElementById('clientName').value; //Captura el nombre
     console.log(name);
     document.getElementById('nombre').innerHTML = name;
-
     const card = document.getElementById('cardType').value; //Captura el tipo de tarjeta
     console.log(card);
-// ***********
-    let strNumber = document.getElementById('cardNumber').value;
-     //Captura el #tarjeta en string
-    strNumber = Array.from(strNumber); //Convierte la data en Array
+
+ //****Captura de datos de la tarjeta: numeros.****
+    let strNumber1 = document.getElementById('cardNumber').value;//Captura el #tarjeta en string
+     
+    let strNumber = Array.from(strNumber1); //Convierte la data en Array
     console.log(strNumber);
     
     let arrayNum = [];
@@ -21,28 +22,26 @@ function getData(){
         let elemento = parseInt(strNumber[i])
         arrayNum.push(elemento)
     }
-    arrayNum = arrayNum.reverse();
-    console.log(arrayNum);//Aún Requiere el masking, requiere las operaciones para Luhn (en validator.js)
+    console.log(arrayNum);
 
-    // Algoritmo de Luhn en el validator.js
-    
-    
-    const validar = validator.isValid(arrayNum);//Devuelve el resultado de funcion isValid (está mandando resultado undefined)
+    // ISVALID FUNCTION CALLBACK:
+    const validar = validator.isValid(arrayNum);//Devuelve el resultado de funcion isValid.
     if(validar === true){
         alert('Número de tarjeta válido')
     }
     else{alert('Número de tarjeta no válido');}
 
+    //*** MASKIFY FUNCTION CALLBACK:
+    const maskified = validator.maskify(strNumber1);//Devuelve el resultado de funcion maskify.
+    maskified = validator.maskify(creditNum);
 
+ //Captura de datos de la tarjeta: fecha de validez, y cvv.
     const month = document.getElementById('month').value;
     console.log(month);
-
     const year = document.getElementById('year').value;
     console.log(year);
-
     const cvv = document.getElementById('cvv').value;
     console.log(cvv);
+
 }
-
 document.getElementById('btnSubmit').addEventListener("click",getData);
-
