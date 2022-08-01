@@ -35,8 +35,7 @@ const validator = {
       let visibleNum = creditNum.toString().slice(-4);
       console.log(visibleNum)
       maskified = maskedNum + visibleNum;
-      console.log(maskified);
-      //return maskified;  
+      return maskified;  
   }
 };
 export default validator;

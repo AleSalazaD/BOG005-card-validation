@@ -24,18 +24,19 @@ function getData(){
     }
     console.log(arrayNum);
 
+    //*** MASKIFY FUNCTION CALLBACK:
+    const maskified = validator.maskify(strNumber1);//Devuelve el resultado de funcion maskify.
+    console.log(maskified);
     // ISVALID FUNCTION CALLBACK:
     const validar = validator.isValid(arrayNum);//Devuelve el resultado de funcion isValid.
     if(validar === true){
+        document.getElementById('cardNumber').value = maskified;
+        document.getElementById('numero').textContent = maskified;
         alert('Número de tarjeta válido')
     }
     else{alert('Número de tarjeta no válido');}
-
-    //*** MASKIFY FUNCTION CALLBACK:
-    const maskified = validator.maskify(strNumber1);//Devuelve el resultado de funcion maskify.
-    maskified = validator.maskify(creditNum);
-
- //Captura de datos de la tarjeta: fecha de validez, y cvv.
+  
+    //Captura de datos de la tarjeta: fecha de validez, y cvv.
     const month = document.getElementById('month').value;
     console.log(month);
     const year = document.getElementById('year').value;
