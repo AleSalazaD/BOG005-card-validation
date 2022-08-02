@@ -4,16 +4,19 @@
 }
 
 body {
+  /* display: flex;
+  flex-direction: column; */
   background-color: rgb(241, 253, 247);
   margin: 20px;
-  padding: 0px; 
+  padding: 0px;
+  height: 100vh; 
 }
 
 h1 {
     color: rgb(6, 68, 12);
     font-size: 3rem;
     margin-top: 1em;
-    text-shadow: 2px 2px 10px rgb(0, 0, 0);   
+    text-shadow: 2px 2px 10px rgb(62, 60, 60);   
 }
 
 h2 {
@@ -55,6 +58,7 @@ legend {
   }
 fieldset {
     padding: 10px;
+    border-color: rgb(75, 141, 235);
   }
 
   p {
@@ -78,7 +82,6 @@ aside {
     float: right;
     width: 35%;
     font-size: medium
-    
 }
 
 img {
@@ -86,30 +89,31 @@ img {
 }
 
 footer {
-  display: flexblock;
-  clear: both;
   text-align: left;
   padding-top: 50px;
   background-color: rgb(206, 248, 234);
-  
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 section{
   display: block;
   font-size: large;
 }
 
-/* ---------- Estilos de la Impresión de la Tarjeta ----------*/
+/* ---------- Estilos de la Impresión de datos ----------*/
 
 .impriCard {
-  display: flexbox;
+  display: flex;
   float: left;
   padding-bottom: 5px;
+  color: rgb(4, 101, 236);;
 }
 
 .label {
   display: block;
   float: left;
   font-size: larger;
-  color: rgb(21, 76, 38);
-  
+  color: darkgreen;
 }
+
