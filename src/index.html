@@ -12,13 +12,7 @@
       <p>
         <img src="images/bonsaiShop.png" alt="bonsai logo">
         <h1>Bonsai Kingdom</h1>
-        <!-- <h2>Un Bosquecito en Casa</h2> -->
-      </p>
-        <!-- Código para la caja de búsqueda: No será funcional en esta aplicación-->
-        <div class="search">
-          <input class="search--input" type="search" placeholder="buscar...">
-          <input class="search--submit" type="submit" value="&#x1f50d;"/>
-        </div> 
+      </p> 
         <nav>
           <ul>
             <li><a href=>Regístrate</a></li>
@@ -49,14 +43,13 @@
           </p>  
         </fieldset>
       </section>
-
       <section id="dataCard">
         <fieldset>
           <legend>Tarjeta de Crédito</legend>
           <form action="" method="post">
             <p>
               <label for="clientName">Nombre como aparece en la Tarjeta</label>
-              <input type="text" class="validateCard" id="clientName" placeholder="Nombre" >
+              <input type="text" class="validateCard" id="clientName" placeholder="Nombre">
             </p>
             <p>
               <label for="cardType">Tipo de tarjeta </label>
@@ -73,49 +66,63 @@
             <p>
               <label>Vencimiento: </label>
               <label for="month">Mes </label>
-              <select class="validateCard" id="month" >
+              <select class="validateCard" id="month">
+                <option value=""> </option>
                 <option value="enero">01</option>
                 <option value="febrero">02</option>
                 <option value="marzo">03</option>
+                <option value="abril">04</option>
+                <option value="mayo">05</option>
+                <option value="junio">06</option>
+                <option value="julio">07</option>
+                <option value="agosto">08</option>
+                <option value="septiembre">09</option>
+                <option value="octubre">10</option>
+                <option value="noviembre">11</option>
+                <option value="diciembre">12</option>
               </select>
-
               <label for="year">Año</label>
-              <select class="validateCard" id="year" >
+              <select class="validateCard" id="year">
+                <option value=""> </option>
                 <option value="2022">22</option>
                 <option value="2023">23</option>
                 <option value="2024">24</option>
+                <option value="2025">25</option>
+                <option value="2026">26</option>
+                <option value="2027">27</option>
+                <option value="2028">28</option>
+                <option value="2029">29</option>
+                <option value="2030">30</option>
               </select>
             </p>
             <p>
               <label for="cvv">CVV:</label>
-              <input type="text" class="validateCard" id="cvv" placeholder="CVV" maxlength="3" inputmode="numeric"/>
+              <input type="text" class="validateCard" id="cvv" placeholder="CVV" maxlength="3"/>
             </p>
             <p>
               <button class="validateCard" type="button" id="btnSubmit">PAGAR</button>
-              <button type="button">Cancelar</button>
+              <button type="reset">Cancelar</button>
             </p>
           </form>
         </fieldset>
       </section>
-
-      <section class="impriCard">
+      <section>
         <p>
           <label for="nombre" class="label">Nombre en Tarjeta: </label>
-          <span class="impriCard" id="nombre">&nbsp;</span><!-- espacio no borrable consultarlo -->
+          <span class="impriCard" id="printName">&nbsp;</span>
         </p>
-        <p> 
-          <label for="tipo" class="label">Tipo de Tarjeta: </label>
-          <span class="impriCard" id="tipo">&nbsp;</span>
-        </p>
-        <p> 
+        <br>
+        <p>
           <label for="numero" class="label">Número de Tarjeta: </label>
-          <span class="impriCard" id="numero">&nbsp;</span>
+          <span class="impriCard" id="printNumber">&nbsp;</span>
         </p>
-        <label for="expiracion" class="label">Expiración: </label>
-        <span class="impriCard" id="expiracion"><span class="mes">MM</span> / <span class="year">AA</span>&nbsp;</span>
+        <br>
+        <p>
+          <!--  <label for="numero" class="label">Número de Tarjeta: </label>-->
+          <span class="impriCard" id="message">&nbsp;</span>
+        </p>
       </section>
     </main>
-
     <aside id="column">
       <fieldset>
         <legend>Resumen de Compra</legend>

@@ -1,10 +1,10 @@
 //Objeto validator que contiene las funciones y que luego va a ser importado al index.js para poder interactuar.
 const validator = {
   // ******FUNCION ISVALID******
-  isValid: function (creditNum) {
-    creditNum.reverse();
+  isValid: function (creditCardNumber) {
+    //creditCardNumber.reverse();
     const total = [];
-    creditNum.forEach((e, i) => {
+    creditCardNumber.forEach((e, i) => {
       if(i % 2 !== 0){
         const numPar = e * 2;
       
@@ -13,14 +13,14 @@ const validator = {
             numPar.toString().split('').reduce((a, b) =>parseInt(a) + parseInt(b))
           );
         }
-        else{total.push(numPar); }//numpar si multiplica todos los pares, e si pasan sin multiplicar
-        console.log(numPar);
+        else{total.push(numPar); }
+        
       }
       else{total.push(parseInt(e));}
     });
-    console.log(total);
+    
     const sumaTotal = total.reduce((digit1, digit2) => digit1+digit2, 0);
-    console.log(sumaTotal);
+    
     if(sumaTotal % 10 === 0){
       return true;
       
@@ -28,12 +28,12 @@ const validator = {
     else{return false;}  
   },
   // ****** FUNCION MASKIFY******
-  maskify(creditNum){
+  maskify(creditCardNumber){
       let maskified; 
-      let maskedNum = creditNum.toString().slice(0,-4).replace(/\w/g,'#');
-      console.log(maskedNum);
-      let visibleNum = creditNum.toString().slice(-4);
-      console.log(visibleNum)
+      let maskedNum = creditCardNumber.toString().slice(0,-4).replace(/\w/g,'#');
+      
+      let visibleNum = creditCardNumber.toString().slice(-4);
+      
       maskified = maskedNum + visibleNum;
       return maskified;  
   }
