@@ -1,18 +1,13 @@
-<<<<<<< HEAD
-# VALIDADOR DE TARJETAS DE CRÉDITO PARA TIENDA VIRTUAL
-Proyecto nivel 1 para el BootCamp de Laboratoria. Consiste en desarrollar un validador de tarjetas de crédito utilizando JavaScript vanilla dentro del contexto de una aplicación web.
-Para dar contexto al proyecto escogí crear la página de pago de una tienda virtual.
-=======
 # VALIDADOR DE TARJETAS DE CRÉDITO
-Proyecto nivel 1 para el BootCamp de \<Laboratoria>. Desarrollé un validador de tarjetas de crédito utilizando JavaScript vanilla dentro del contexto de una aplicación web.
->>>>>>> 16f5260c63fbe82aafd12a63ed4fdc0bb8d91004
+Proyecto nivel 1 para el BootCamp de Laboratoria. Consiste en desarrollar un validador de tarjetas de crédito utilizando JavaScript vanilla dentro del contexto de una aplicación web.
+Para dar contexto al proyecto decidí crear la página de pago de una tienda virtual.
+***
 
-## Objetivos de aprendizaje alcanzados:
+## Objetivos de aprendizaje
 1. Uso semántico de HTML
 2. Uso de selectores CSS
 3. Web APIs
 4. Manejo básico a intermedio de JavaScript (datos primitivos, manipulación de cadenas, variables, condicionales, bucles, funciones, pruebas unitarias)
-
 
 ***
 
@@ -25,25 +20,19 @@ El validador de tarjetas de crédito fue diseñado con las siguientes caracterí
 5. Enmascare todos los números de la tarjeta, excepto los últimos cuatro, cuando la tarjeta es válida.
 
 ***
-
 # Cómo el producto soluciona los problemas/necesidades de dichos usuarios.
-Las tiendas virtuales requieren herramientas simples que les permitan realizar sus transacciones, los clientes potenciales quieren entender cómo utilizarlas y además confiar en que sus datos van a encontrarse seguros al realizar sus compras.
+Las tiendas virtuales requieren herramientas simples que les permitan realizar sus ventas, los clientes potenciales quieren entender cómo utilizarlas y además confiar en que sus datos van a encontrarse seguros al realizar sus compras.
 
 ***
 
-# Foto de tu primer prototipo en papel.
-<<<<<<< HEAD
-![Image text](images/mockupInicial.jpg)
-
-***
-=======
+# Foto del primer prototipo en papel.
 ![inicialMockup](src/images/mockupInicial.jpg)
->>>>>>> 16f5260c63fbe82aafd12a63ed4fdc0bb8d91004
+
+***
 
 # Resumen del feedback recibido indicando las mejoras a realizar.
 Pendiente.
 
 ***
-
 # Imagen del prototipo final.
 Pendiente.
