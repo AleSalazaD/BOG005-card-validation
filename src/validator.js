@@ -2,7 +2,10 @@
 const validator = {
   // ******FUNCION ISVALID******
   isValid: function (creditCardNumber) {
-    //creditCardNumber.reverse();
+    
+    if(creditCardNumber === ''){
+      return false;
+    }
     const strNumber = Array.from(creditCardNumber).reverse();
     let arrayNum = [];
     for(let i=0; i<strNumber.length; i++){
@@ -10,9 +13,7 @@ const validator = {
         arrayNum.push(elemento);
     }
     const total = [];
-    console.log(creditCardNumber)
     arrayNum.forEach((e, i) => {
-      console.log(e)
       if(i % 2 !== 0){
         const numPar = e * 2;
       

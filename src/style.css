@@ -26,8 +26,11 @@ h2 {
     margin-left: -12em;
 }
 header {
+    margin: 10px;
     display: flex;
     background-color: rgb(161, 212, 186);
+    /* position: absolute; */
+    width: 100%;
   }
 
 nav {
@@ -44,11 +47,12 @@ nav li {
     display: block;
     text-align: center;
     flex: 1;
+    
   }
 nav a{
-    font-size: 1rem;
+    font-size: 20px;
     height: 3rem;
-    color: darkgreen;
+    color: rgb(75, 141, 235);
   }
 
 legend {
@@ -57,14 +61,19 @@ legend {
     color: darkgreen;
   }
 fieldset {
-    padding: 10px;
-    border-color: rgb(75, 141, 235);
+  position: relative;
+  margin: 15px; 
+  padding: 30px;
+  border-color: rgb(75, 141, 235);
   }
 
   p {
     padding: 4px;
-  }
-main {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+  main {
   height: 3rem;
   display: flexbox;
   font-size: 1rem;
@@ -81,20 +90,31 @@ aside {
     display: block;
     float: right;
     width: 35%;
-    font-size: medium
+    font-size: large;
+    
 }
 
 img {
   width:90px;
 }
 
+img.redes{
+  margin-left: 55px;
+  width: 10%;
+}
 footer {
-  text-align: left;
-  padding-top: 50px;
+  
+  padding: 20px;
+  margin: 10px;
   background-color: rgb(206, 248, 234);
   bottom: 0;
   position: absolute;
   width: 100%;
+}
+
+footer p{
+  text-align:start;
+  font-size: 15px;
 }
 section{
   display: block;
@@ -117,3 +137,12 @@ section{
   color: darkgreen;
 }
 
+input{
+  font-size: 16px;
+  color: rgb(4, 101, 236);
+}
+
+select{
+  font-size: 16px;
+  color: rgb(4, 101, 236);
+}
