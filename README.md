@@ -5,35 +5,63 @@ Para dar contexto al proyecto decidí crear la página de pago de una tienda vir
 
 ## Objetivos de aprendizaje
 1. HTML
-    -[x] Uso semántico de HTML
+
+   [x] Uso semántico de HTML
 2. CSS
-    -[x] Uso de selectores 
-    -[x] Módelo de caja: borde, margen, padding.
+    
+   [x] Uso de selectores
+    
+   [x] Módelo de caja: borde, margen, padding.
+   
 3. Web APIs
-    -[x] Uso de selectores del DOM
-    -[x] Manejo de eventos del DOM: Listeners, propagación, delegación.
-    -[] Manipulación dinámica del DOM.
+
+    [x] Uso de selectores del DOM
+    
+    [x] Manejo de eventos del DOM: Listeners, propagación, delegación.
+    
+    [ ] Manipulación dinámica del DOM.
+    
 4. JAVASCRIPT
-    -[x] Tipos de datos primitivos
-    -[x] Strings
-    -[x] Variables: declaración, asignación, ámbito.
-    -[x] Condicionales
-    -[x] bucles
-    -[x] Funciones
-    -[x] Pruebas unitarias ==> pasarlas
-    -[] Módulos ECMAScript
-    -[x] Uso de linter (ESLINT)
-    -[x] Uso de identificadores descriptivos.
+
+    [x] Tipos de datos primitivos
+    
+    [x] Strings
+    
+    [x] Variables: declaración, asignación, ámbito.
+    
+    [x] Condicionales
+    
+    [x] bucles
+    
+    [x] Funciones
+    
+    [x] Pruebas unitarias ==> pasarlas
+    
+    [] Módulos ECMAScript
+    
+    [x] Uso de linter (ESLINT)
+    
+    [x] Uso de identificadores descriptivos.
+    
 5. CONTROL DE VERSIONES GIT- GITHUB
-    -[x] Instalación y configuración
-    -[x] Control de versiones: init, clone, add, commit, status, push, pull, remote.
-    -[x] Creación de cuenta y repos, configuración de llaves SSH
-    -[x] Despliegue GitHub Pages
+
+    [x] Instalación y configuración
+    
+    [x] Control de versiones: init, clone, add, commit, status, push, pull, remote.
+    
+    [x] Creación de cuenta y repos, configuración de llaves SSH
+    
+    [x] Despliegue GitHub Pages
+    
 6. USER CENTRICITY
-    -[] Diseñar un producto o servicio poniendo a la usuaria en el centro.
+
+    [ ] Diseñar un producto o servicio poniendo a la usuaria en el centro.
+    
 7. PRODUCT DESIGN
-    -[] Crear prototipos de alta fidelidad que incluyan interacciones
-    -[x] Seguir los principios básicos de diseño visual.
+
+    [ ] Crear prototipos de alta fidelidad que incluyan interacciones
+    
+    [x] Seguir los principios básicos de diseño visual.
 
 
 ***
