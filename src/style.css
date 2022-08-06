@@ -4,8 +4,8 @@
 }
 
 body {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   background-color: rgb(241, 253, 247);
   margin: 20px;
   padding: 0px;
@@ -29,14 +29,14 @@ header {
     margin: 10px;
     display: flex;
     background-color: rgb(161, 212, 186);
-    /* position: absolute; */
+    position: fixed;
     width: 100%;
   }
 
 nav {
     height: 5px;
     flex: 50%;
-    display: flex;
+    display: flexbox;
   }
 nav ul {
     padding: 1;
@@ -74,20 +74,20 @@ fieldset {
 }
   
   main {
-  height: 3rem;
-  display: flexbox;
+  /* display: flexbox; */
   font-size: 1rem;
   text-align: left;
   text-decoration-color: rgb(162, 175, 175);
-  margin-left: 1rem;
-  padding-left: 10px;
+  margin-top:150px;
+  padding: 10px;
   float: left;
   width: 60%;
-  padding-bottom: 80px;
+  
 }
 
 aside {
-    display: block;
+  margin-top: 160px; 
+  display: block;
     float: right;
     width: 35%;
     font-size: large;
@@ -103,12 +103,17 @@ img.redes{
   width: 10%;
 }
 footer {
-  padding: 20px;
-  margin: 10px;
+  height: 90px;
+  line-height: 20px;
+  font-size: 11px;
   background-color: rgb(206, 248, 234);
+  text-align: center;
+  position: fixed;
   bottom: 0;
-  position: absolute;
+  left: 0;
   width: 100%;
+  margin: 0 auto;
+  z-index: 10;
 }
 
 footer p{

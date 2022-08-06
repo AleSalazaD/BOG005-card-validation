@@ -7,139 +7,149 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/bonsaiShop.png"/>
   </head>
-  <body>
-    <header>
-      <p>
-        <img src="images/bonsaiShop.png" alt="bonsai logo">
-        <h1>Bonsái Kingdom</h1>
-      </p> 
-        <nav>
-          <ul>
-            <li><a href=>Regístrate</a></li>
-            |
-            <li><a href=>Ikebana</a></li>
-            |
-            <li><a href=>Tienda</a></li>
-            |
-            <li><a href=>Carrito</a></li>
-          </ul>
-        </nav>  
-      </header>
-    <main>
-      <section id="dataPayment">
-        <fieldset>
-          <legend>Método de pago</legend>
+  <div class="body">
+    <body>
+      <div class="header">
+        <header>
           <p>
-            <input type="radio" name="payment" id="Credit"  value="Credit" checked>
-            <label for="Credit">Tarjeta de Crédito</label>
+            <img src="images/bonsaiShop.png" alt="bonsai logo">
+            <h1>Bonsái Kingdom</h1>
           </p>
-          <p>
-            <input type="radio" name="payment" id="Debit"  value="Debit">
-            <label for="Debit">Tarjeta Débito</label>
-          </p>
-          <p>
-            <input type="radio" name="payment" id="transfer"  value="transfer">
-            <label for="transfer">Transferencia Bancaria</label>
-          </p>  
-        </fieldset>
-      </section>
-      <section id="dataCard">
-        <fieldset>
-          <legend>Tarjeta de Crédito</legend>
-          <form action="" method="get">
+            <nav>
+              <ul>
+                <li><a href=>Regístrate</a></li>
+                |
+                <li><a href=>Ikebana</a></li>
+                |
+                <li><a href=>Tienda</a></li>
+                |
+                <li><a href=>Carrito</a></li>
+              </ul>
+            </nav>  
+        </header>
+      </div>
+      <div class="main">
+        <main>
+          <section id="dataPayment">
+            <fieldset>
+              <legend>Método de pago</legend>
+              <p>
+                <input type="radio" name="payment" id="Credit"  value="Credit" checked>
+                <label for="Credit">Tarjeta de Crédito</label>
+              </p>
+              <p>
+                <input type="radio" name="payment" id="Debit"  value="Debit">
+                <label for="Debit">Tarjeta Débito</label>
+              </p>
+              <p>
+                <input type="radio" name="payment" id="transfer"  value="transfer">
+                <label for="transfer">Transferencia Bancaria</label>
+              </p>  
+            </fieldset>
+          </section>
+          <section id="dataCard">
+            <fieldset>
+              <legend>Tarjeta de Crédito</legend>
+              <form action="" method="get">
+                <p>
+                  <label for="clientName">Nombre como aparece en la Tarjeta</label>
+                  <input type="text" class="validateCard" id="clientName" placeholder="Nombre">
+                </p>
+                <p>
+                  <label for="cardType">Tipo de tarjeta </label>
+                  <select class="validateCard" id="cardType" >
+                    <option value="visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="American Express">American Express</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="cardNumber">Número de la tarjeta</label>
+                  <input type="text" class="validateCard" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required/>
+                </p>
+                <p>
+                  <label>Vencimiento: </label>
+                  <label for="month">Mes </label>
+                  <select class="validateCard" id="month">
+                    <option value=""> </option>
+                    <option value="enero">01</option>
+                    <option value="febrero">02</option>
+                    <option value="marzo">03</option>
+                    <option value="abril">04</option>
+                    <option value="mayo">05</option>
+                    <option value="junio">06</option>
+                    <option value="julio">07</option>
+                    <option value="agosto">08</option>
+                    <option value="septiembre">09</option>
+                    <option value="octubre">10</option>
+                    <option value="noviembre">11</option>
+                    <option value="diciembre">12</option>
+                  </select>
+                  <label for="year">Año</label>
+                  <select class="validateCard" id="year">
+                    <option value=""> </option>
+                    <option value="2022">22</option>
+                    <option value="2023">23</option>
+                    <option value="2024">24</option>
+                    <option value="2025">25</option>
+                    <option value="2026">26</option>
+                    <option value="2027">27</option>
+                    <option value="2028">28</option>
+                    <option value="2029">29</option>
+                    <option value="2030">30</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="cvv">CVV:</label>
+                  <input type="text" class="validateCard" id="cvv" placeholder="CVV" maxlength="3"/>
+                </p>
+                <p>
+                  <button class="validateCard" type="button" id="btnSubmit">PAGAR</button>
+                  <button type="reset">Cancelar</button>
+                </p>
+              </form>
+            </fieldset>
+          </section>
+          <section>
             <p>
-              <label for="clientName">Nombre como aparece en la Tarjeta</label>
-              <input type="text" class="validateCard" id="clientName" placeholder="Nombre">
+              <label for="nombre" class="label">Nombre en Tarjeta: </label>
+              <span class="impriCard" id="printName">&nbsp;</span>
+              <br>
             </p>
             <p>
-              <label for="cardType">Tipo de tarjeta </label>
-              <select class="validateCard" id="cardType" >
-                <option value="visa">Visa</option>
-                <option value="Mastercard">Mastercard</option>
-                <option value="American Express">American Express</option>
-              </select>
+              <label for="numero" class="label">Número de Tarjeta: </label>
+              <span class="impriCard" id="printNumber">&nbsp;</span>
+              <br>
             </p>
             <p>
-              <label for="cardNumber">Número de la tarjeta</label>
-              <input type="text" class="validateCard" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required/>
+              <!--  <label for="numero" class="label">Número de Tarjeta: </label>-->
+              <span class="impriCard" id="message">&nbsp;</span>
             </p>
-            <p>
-              <label>Vencimiento: </label>
-              <label for="month">Mes </label>
-              <select class="validateCard" id="month">
-                <option value=""> </option>
-                <option value="enero">01</option>
-                <option value="febrero">02</option>
-                <option value="marzo">03</option>
-                <option value="abril">04</option>
-                <option value="mayo">05</option>
-                <option value="junio">06</option>
-                <option value="julio">07</option>
-                <option value="agosto">08</option>
-                <option value="septiembre">09</option>
-                <option value="octubre">10</option>
-                <option value="noviembre">11</option>
-                <option value="diciembre">12</option>
-              </select>
-              <label for="year">Año</label>
-              <select class="validateCard" id="year">
-                <option value=""> </option>
-                <option value="2022">22</option>
-                <option value="2023">23</option>
-                <option value="2024">24</option>
-                <option value="2025">25</option>
-                <option value="2026">26</option>
-                <option value="2027">27</option>
-                <option value="2028">28</option>
-                <option value="2029">29</option>
-                <option value="2030">30</option>
-              </select>
-            </p>
-            <p>
-              <label for="cvv">CVV:</label>
-              <input type="text" class="validateCard" id="cvv" placeholder="CVV" maxlength="3"/>
-            </p>
-            <p>
-              <button class="validateCard" type="button" id="btnSubmit">PAGAR</button>
-              <button type="reset">Cancelar</button>
-            </p>
-          </form>
-        </fieldset>
-      </section>
-      <section>
-        <p>
-          <label for="nombre" class="label">Nombre en Tarjeta: </label>
-          <span class="impriCard" id="printName">&nbsp;</span>
-          <br>
-        </p>
-        <p>
-          <label for="numero" class="label">Número de Tarjeta: </label>
-          <span class="impriCard" id="printNumber">&nbsp;</span>
-          <br>
-        </p>
-        <p>
-          <!--  <label for="numero" class="label">Número de Tarjeta: </label>-->
-          <span class="impriCard" id="message">&nbsp;</span>
-        </p>
-      </section>
-    </main>
-    <aside id="column">
-      <fieldset>
-        <legend>Resumen de Compra</legend>
-        <p><img src="images\bonsaiNaranjo.jpg" alt="Naranjo Mágico" />1. Naranjo mágico $45000</p>
-        <p><img src="images\bonsaiCiruelo.jpg" alt="Ciruelo Celta" />2. Ciruelo Celta $60000</p>
-        <p><img src="images\bonsaiCasita.jpg" alt="Casita de Hadas" />3. Casita de hadas $85000</p>
+          </section>
+        </main>
+      </div>  
         
-        <p>Subtotal: $190000</p>
-        <p>Envío: $12000</p>
-        <p>IVA: $38380</p> 
-        <p>TOTAL:$228380</p> 
-      </fieldset>
-    </aside>
+      <div class="aside">  
+        <aside id="column">
+          <fieldset>
+            <legend>Resumen de Compra</legend>
+            <p><img src="images\bonsaiNaranjo.jpg" alt="Naranjo Mágico" />1. Naranjo mágico $45000</p>
+            <p><img src="images\bonsaiCiruelo.jpg" alt="Ciruelo Celta" />2. Ciruelo Celta $60000</p>
+            <p><img src="images\bonsaiCasita.jpg" alt="Casita de Hadas" />3. Casita de hadas $85000</p>
+            <p>Subtotal: $190000</p>
+            <p>Envío: $12000</p>
+            <p>IVA: $38380</p> 
+            <p>TOTAL:$228380</p> 
+          </fieldset>
+        </aside>
+      </div>
 
-    <footer id="foot">
-      <p>Encuéntranos en nuestras redes sociales como @bonsaiKingdom y escríbenos para estar en contacto.<img src="images\media.png" alt="Redes sociales" class="redes" /></p>
-    </footer>
-    <script src="index.js" type="module"></script>
-  </body>
+      <div class="footer">
+        <footer id="foot">
+          <p>Encuéntranos en nuestras redes sociales como @bonsaiKingdom y escríbenos para estar en contacto.<img src="images\media.png" alt="Redes sociales" class="redes" /></p>
+        </footer>
+      </div>
+      <script src="index.js" type="module"></script>
+    </body>
+  </div>
 </html>
