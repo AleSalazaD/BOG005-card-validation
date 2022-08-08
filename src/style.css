@@ -1,9 +1,4 @@
 /* Normalize.css agregado a través de npm */
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -30,7 +25,7 @@ header {
     margin: 10px;
     display: flex;
     background-color: rgb(161, 212, 186);
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
   }
 
@@ -63,8 +58,8 @@ legend {
   }
 fieldset {
   position: relative;
-  margin: 15px; 
-  padding: 30px;
+  margin: 10px; 
+  padding: 10px;
   border-color: rgb(75, 141, 235);
   }
 
@@ -109,7 +104,7 @@ footer {
   font-size: 11px;
   background-color: rgb(206, 248, 234);
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -151,3 +146,5 @@ select{
   font-size: 16px;
   color: rgb(4, 101, 236);
 }
+
+
